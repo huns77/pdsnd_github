@@ -1,14 +1,13 @@
 
 import time
-import pandas as pd
-import numpy as np
+import pandas as pd #pandas 임포트 하기
+import numpy as np #numpy 임포트 하기
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
 def get_filters():
-    
     
     print('안녕하세요! 미국의 자전거 공유 데이터를 살펴봅시다!')
     
@@ -21,6 +20,7 @@ def get_filters():
             print('잘못된 입력입니다. 다시 입력하세요.')
 
     # 사용자로부터 월 입력 받기 (all, january, february, ... , june)
+    # 1월, 2월, 3월, 4월, 5월, 6월 등 모든 월을 리스트항목으로 가지는 month
     while True:
         month = input('월을 선택하세요 (all, january, february, ... ): ')
         if month.lower() in ['all', 'january', 'february', 'march', 'april', 'may', 'june']:
@@ -29,6 +29,7 @@ def get_filters():
             print('잘못된 입력입니다. 다시 입력하세요.')
 
     # 사용자로부터 요일 입력 받기 (all, monday, tuesday, ... sunday)
+    # 월요일, 화요일, 수요일, 목요일, 금요일, 토요일, 일요일 모든요일을 항목으로 가지는 DAYS
     while True:
         day = input('요일을 선택하세요 (all, monday, tuesday, ... sunday): ')
         if day.lower() in ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']:
@@ -36,7 +37,7 @@ def get_filters():
         else:
             print('잘못된 입력입니다. 다시 입력하세요.')
 
-    print('-'*40)
+    print('=='*40)
     return city, month, day
 
 
