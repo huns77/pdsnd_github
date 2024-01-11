@@ -1,14 +1,13 @@
 
 import time
-import pandas as pd
-import numpy as np
+import pandas as pd #pandas 임포트 하기
+import numpy as np #numpy 임포트 하기
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
 def get_filters():
-    
     
     print('안녕하세요! 미국의 자전거 공유 데이터를 살펴봅시다!')
     
@@ -38,7 +37,7 @@ def get_filters():
         else:
             print('잘못된 입력입니다. 다시 입력하세요.')
 
-    print('-'*40)
+    print('=='*40)
     return city, month, day
 
 
