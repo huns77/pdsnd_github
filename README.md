@@ -5,10 +5,9 @@
 
 ### Project Title
 American Bikeshare Project with python.
-
 ### Description
 This project explores bike share data in U.S. cities (Chicago, New York City, Washington) to analyze bicycle usage patterns and trends. 
-
+a survey of the time to travel
 ### Files used
 git & github
 - chicago.csv
@@ -19,3 +18,4 @@ git & github
 ### Credits
 This project was inspired by the Udacity Programming for Data Science with Python Nanodegree Program.
 
+I have gained a lot from this program.
